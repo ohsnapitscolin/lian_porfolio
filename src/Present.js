@@ -7,6 +7,8 @@ const TYPE_PAUSE = 500;
 const ERASE_INTERVAL = 50;
 const ERASE_PAUSE = 1500;
 
+const resources = "./resources/"
+
 class Footer extends React.Component {
   render() {
     return (
@@ -29,7 +31,7 @@ class Greeting extends React.Component {
     return (
       <div className="greeting">
         <div className="face_wrapper">
-          <img className="lian_face" src={require('./Me.png')} alt="me"/>
+          <img className="lian_face" src={require(resources + 'me.png')} alt="me"/>
         </div>
 
         <div className="hi">Hi, I'm Lian.</div>
@@ -52,7 +54,7 @@ class Greeting extends React.Component {
 export default class Present extends React.Component {
   constructor() {
     super();
-    var present = require('./present.json');
+    var present = require(resources + 'present.json');
     this.likes_ = [present.works, present.hobbies]
     this.currLikes_ = [];
     this.fillLikes(0);
@@ -64,7 +66,7 @@ export default class Present extends React.Component {
       currLikes: [currLike1, currLike2],
       currIndices: [currLike1.length, currLike2.length]
     };
-    this.gradients_ = require('./gradients.json').gradients;
+    this.gradients_ = require(resources + 'gradients.json').gradients;
     this.gradientIter_ = 0;
     this.gradientInterval_ = null;
   }

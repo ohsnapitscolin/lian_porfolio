@@ -6,6 +6,7 @@ export default class NotFound extends React.Component {
   constructor() {
     super();
   }
+
   render() {
     $('body').css("background", "#FFF0E9");
     $('.gradient1').hide();

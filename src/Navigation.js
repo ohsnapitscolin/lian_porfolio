@@ -1,8 +1,9 @@
 import React from 'react';
 import $ from 'jquery';
 import { Link } from 'react-router';
-
 import './Common.css';
+
+var resources = "./resources/"
 
 var PathEnum = {
     PRESENT : 0,
@@ -18,10 +19,10 @@ class Home extends React.Component {
     return (
     	<Link to="/present" onClick={this.props.onClick}>
         <div className="home home_button home_right">
-          <img className="home_image_right" src={require("./home_right.png")} alt="home" />
+          <img className="home_image_right" src={require(resources + "home_right.png")} alt="home" />
         </div>
         <div className="home home_button home_left">
-          <img className="home_image_left" src={require("./home_left.png")} alt="home" />
+          <img className="home_image_left" src={require(resources + "home_left.png")} alt="home" />
         </div>
     	</Link>
     );

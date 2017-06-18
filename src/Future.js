@@ -2,6 +2,8 @@ import React from 'react';
 import $ from 'jquery';
 import './Common.css'
 
+var resources = "./resources/"
+
 class FutureLeft extends React.Component {
  render() {
     return (
@@ -31,7 +33,7 @@ class FutureRight extends React.Component {
             <div id="eightball_question">Should I contact Lian?</div>
               <img
                 id="eightball_image"
-                src={require("./Crystal_Ball.png")}
+                src={require(resources + 'crystal_ball.png')}
                 alt="eightball"
                 onClick={this.props.onClick}
               />
@@ -45,7 +47,7 @@ class FutureRight extends React.Component {
 export default class Future extends React.Component {
   constructor() {
     super();
-    var data = require('./future.json');
+    var data = require(resources + 'future.json');
     this.state = {
       answers: data.answers,
       answer: this.randomValue(data.answers)

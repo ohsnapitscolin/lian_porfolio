@@ -2,6 +2,8 @@ import React from 'react';
 import $ from 'jquery';
 import './Common.css';
 
+var resources = "./resources/"
+
 class JobData extends React.Component {
   render() {
     return (
@@ -85,10 +87,10 @@ class Resume extends React.Component {
   render() {
     return (
       <div id="download">
-        <a id="download_link" href={require("./Lian_Resume_2017.pdf")} download>
+        <a id="download_link" href={require(resources + "Lian_Resume_2017.pdf")} download>
           <p id="download_text">Download Full Resume</p>
           <br></br>
-          <img id="download_image" src={require("./Download.png")} alt="download" />
+          <img id="download_image" src={require(resources + "download.png")} alt="download" />
         </a>
       </div>
     );
@@ -98,7 +100,7 @@ class Resume extends React.Component {
 export default class Past extends React.Component {
   constructor() {
     super();
-    var past = require('./past.json');
+    var past = require(resources + 'past.json');
     this.jobs_ = past.jobs;
     this.education_ = past.education;
     this.notables_ = past.notables;

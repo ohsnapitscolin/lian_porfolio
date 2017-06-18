@@ -2,8 +2,9 @@ import React from 'react';
 import $ from 'jquery';
 import './Common.css';
 
-const imageDirectory = "./Shapes/"
-const placesObject = "./places.json"
+const resources = "./resources/"
+const imageDirectory = resources + "Shapes/"
+const placesObject = resources + "places.json"
 
 
 class PlaceImage extends React.Component {

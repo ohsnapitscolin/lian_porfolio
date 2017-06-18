@@ -3,12 +3,12 @@ import $ from 'jquery';
 import { Link } from 'react-router';
 import './Common.css'
 
-const projectDirectory = "./Projects/"
-const projectSpecObject = "/project_spec.json"
-const workObject = "./work.json"
+const resources = "./resources/"
 
-const thumbnailDirectory = "./Thumbnails/"
-
+const projectDirectory = resources + "Projects/"
+const thumbnailDirectory = resources + "Thumbnails/"
+const projectSpecObject = resources + "project_spec.json"
+const workObject = resources + "work.json"
 
 class ProjectImage extends React.Component {
   constructor(props) {

@@ -5,7 +5,7 @@ html {
 
 @font-face {
     font-family: Messina;
-    src: url(./Fonts/MessinaSerifWeb-Bold_gdi.woff);
+    src: url(./resources/fonts/MessinaSerifWeb-Bold_gdi.woff);
 }
 
 body {
