@@ -1,0 +1,60 @@
+{
+  "jobs": [
+    {
+      "name": "Studio Rodrigo",
+      "title": "Designer",
+      "years": "2015—Present",
+      "location": "New York, New York",
+      "link": "http://www.studiorodrigo.com"
+    },
+    {
+      "name": "Digital Media Center for the Arts",
+      "title": "Printing Specialist",
+      "years": "2014—2015",
+      "location": "Yale University, New Haven, Connecticut",
+      "link": "http://dmca.yalecollege.yale.edu"
+    },
+    {
+      "name": "Yale University Art Gallery",
+      "title": "Matting and Framing Assistant",
+      "years": "2013—2015",
+      "location": "Yale University, New Haven, Connecticut",
+      "link": "http://artgallery.yale.edu"
+    },
+        {
+      "name": "PCH Innovations",
+      "title": "Graphics and Design Intern",
+      "years": "2014",
+      "location": "Berlin, Germany",
+      "link": "http://www.pch-innovations.com"
+    },
+            {
+      "name": "Miko McGinty, Inc.",
+      "title": "Design Intern",
+      "years": "2013",
+      "location": "Brooklyn, New York",
+      "link": "http://www.mikobook.com"
+    }
+  ],
+  "education": {
+    "school": "Yale University",
+    "link": "https://yale.edu",
+    "major": "Bachelor Of Arts, 2015",
+    "skills": "Graphic Design, Printmaking, Sculpture",
+    "location": "New Haven, Connecticut"
+  },
+  "notables": [
+    {
+      "text": "Sticker design featured on <a href='http://www.itsnicethat.com/news/nyc-i-voted-sticker-competition-winner-announced-graphic-design-120517' class='notables_link' target='_blank'>It’s Nice That</a>, 2017"
+    },
+    {
+      "text": "Runner-Up in <a href='http://www.nyccfb.info/media/press-releases/nyc-votes-announces-the-winning-design-in-the-i-voted-sticker-contest/' class='notables_link' target='_blank'>NYC Votes</a> “I Voted Sticker Contest,” 2017"
+    },
+    {
+      "text": "Winner of <a href='http://lohmann.yale.edu/' class='notables_link' target='_blank'>The Lohmann Printing Prize for Excellence in Undergraduate Printing and Design</a>, 2015"
+    },
+    {
+      "text": "Featured in <a href='http://ficciones-typografika.tumblr.com/post/105251009671/lian-fumerton-liu-ficciones-typografika-735-737' class='notables_link' target='_blank'>Ficciones Typographica</a>, 2014"
+    }
+  ]
+}
