@@ -19,14 +19,14 @@
 			"name": "Keep Up",
 			"type": "Posters",
 			"thumbnail_src": "Keep_Up.jpg",
-			"thumbnail_width": "32%"
+			"thumbnail_width": "37%"
 		},
 		{
 			"url": "yale_literary_mag",
 			"name": "The Yale Literary Magazine",
 			"type": "Publication",
 			"thumbnail_src": "Yale_Lit_Mag.jpg",
-			"thumbnail_width": "32%"
+			"thumbnail_width": "63%"
 		},
 		{
 			"url": "prime_studio",
