@@ -7,7 +7,7 @@ const resources = "./resources/"
 
 const projectDirectory = resources + "Projects/"
 const thumbnailDirectory = resources + "Thumbnails/"
-const projectSpecObject = resources + "project_spec.json"
+const projectSpecObject = "/project_spec.json"
 const workObject = resources + "work.json"
 
 class ProjectImage extends React.Component {
