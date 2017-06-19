@@ -842,11 +842,12 @@ body {
 .work_grid {
 	padding-top: 75px;
 	width: 100%;
-	max-width: 900px;
-	padding-left: 25px;
-	padding-right: 25px;
+	max-width: 1500px;
+	padding-left: 65px;
+	padding-right: 65px;
 	display: inline-block;
 	box-sizing: border-box;
+	text-align: center;
 }
 
 .work_project {
@@ -885,31 +886,49 @@ body {
 }
 
 .work_image_wrapper {
+	text-decoration: none !important;
 	display: inline-block;
 	vertical-align: text-top;
-	padding: 50px 10px 0 10px;
+	padding: 70px 23px 0 23px;
 	box-sizing: border-box;
 	text-align: left;
 }
+
+.work_image_wrapper a {
+	text-decoration: none !important;
+}
+
 
 .work_image {
 	width: 100%;
 	display: inline-block;
 	vertical-align: text-top;
 	box-sizing: border-box;
-	border-style: solid;
-	border-width: 2px;
-	border-color: white;
 }
 
-.work_image:hover {
+.work_image_and_rollover {
+	position: relative;
+	overflow: hidden;
+}
+
+.work_header {
+	font-size: 14px;
+	max-width: 525px;
+	display: inline-block;
+	line-height: 1.7em;
+	letter-spacing: .05em;
+}
+
+/*.work_image:hover {
+	position: absolute;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #44C0FF;
 	cursor: pointer;
-}
+}*/
 
 .thumbnail_name {
+	color: black;
 	font-size: 13px;
 	font-weight: bold;
 	letter-spacing: .5px;
@@ -919,11 +938,41 @@ body {
 }
 
 .thumbnail_type {
+	color: black;
 	font-size: 13px;
 	letter-spacing: .5px;
 	line-height: 1.5em;
 	text-transform: uppercase;
 	margin-top: 0px;
+}
+
+.thumbnail_rollover {
+
+	background: black;
+    position: absolute;
+    top: -50%;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all .5s, -webkit-transform .5s;
+    transition: all .5s, transform .5s;
+    padding: 15px 20px 20px 20px;
+	box-sizing: border-box;
+
+}
+
+.thumbnail_rollover_text {
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: .05em;
+	font-style: bold;
+	color: white;
+	max-width: 450px;
+}
+
+.thumbnail_rollover.rollover {
+    top: 0;
+    opacity: 1;
 }
 
 .work_link {
@@ -934,9 +983,9 @@ body {
 	color: #44C0FF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.work_image_wrapper {
-		padding: 50px 9px 0 9px;
+		padding: 50px 15px 0 15px;
 	}
 
 	.thumbnail_name {
@@ -950,9 +999,12 @@ body {
 	}
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 756px) {
 	.work_grid {
 		padding-top: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
 	#work_header {
@@ -992,6 +1044,10 @@ body {
 		border-style: inherit;
 		border-width: inherit;
 		border-color: inherit;
+	}
+
+	.thumbnail_rollover.rollover {
+	    opacity: 0;
 	}
 }
 

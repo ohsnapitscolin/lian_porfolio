@@ -152,6 +152,7 @@ class Grid extends React.Component {
 
   componentDidMount() {
 	  this.stylize();
+    this.addRollover();
   }
 
   render() {
@@ -163,13 +164,20 @@ class Grid extends React.Component {
       images.push(
         <div key={i} className="work_image_wrapper" style={style}>
           <Link className="work_image_link" to={"/work/" + this.work_[i].url}>
-            <img
-                className="work_image"
-                src={require(thumbnailDirectory + this.work_[i].thumbnail_src)}
-                alt={this.work_[i].thumbnail_src} />
+            <div className="work_image_and_rollover">
+              <img
+                  className="work_image"
+                  src={require(thumbnailDirectory + this.work_[i].thumbnail_src)}
+                  alt={this.work_[i].thumbnail_src} />
+              <div className="thumbnail_rollover">
+                  <div className="thumbnail_rollover_text">
+                    {this.work_[i].hover}
+                  </div>
+              </div>
+            </div>
+            <p className="thumbnail_name">{this.work_[i].name}</p>
+            <p className="thumbnail_type">{this.work_[i].type}</p>
           </Link>
-          <p className="thumbnail_name">{this.work_[i].name}</p>
-          <p className="thumbnail_type">{this.work_[i].type}</p>
         </div>
       );
     }
@@ -178,6 +186,9 @@ class Grid extends React.Component {
     var gridStyle = {};
     return (
       <div className="work_grid" style={gridStyle}>
+        <p className="work_header">
+          Exploring how design & community converge — through visual stories, across digital screens, among printed objects, behind proactive movements.
+        </p>
         <div id="work_images" style={imagesStyle}>
           {images}
         </div>
@@ -191,13 +202,14 @@ class Grid extends React.Component {
     $('.gradient2').hide();
   }
 
-  addHovers() {
+  addRotation() {
     $('.work_image_wrapper').each(function(i, obj) {
       var angle = Math.floor(Math.random() * 5) + 5;
       var direction = Math.floor(Math.random() * 2)
       if (direction) {
         angle *= -1;
       }
+
       var rotateString = 'rotate(' + angle + 'deg)';
       var $image = $(obj).find('.work_image');
 
@@ -214,6 +226,23 @@ class Grid extends React.Component {
         });
       }, function() {
         $image.removeAttr('style');
+      });
+    });
+  }
+
+  addRollover() {
+    $('.work_image_and_rollover').each(function(i, obj) {
+      console.log(i);
+
+      var $rollover = $(obj).find('.thumbnail_rollover');
+      if (!$rollover) {
+        return;
+      }
+
+      $(obj).hover(function() {
+        $rollover.addClass('rollover');
+      }, function() {
+        $rollover.removeClass('rollover');
       });
     });
   }
