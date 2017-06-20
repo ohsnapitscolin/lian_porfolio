@@ -23,7 +23,6 @@ class Footer extends React.Component {
           </a>
           &nbsp;in New York, NY.
         </p>
-        <img id="present_down_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
       </div>
     );
   }
@@ -104,13 +103,13 @@ export default class Present extends React.Component {
   render() {
     return (
       <div className="present">
-
         <div className="present_wrapper">
           <Greeting
             like1={this.state.currLikes[0].substring(0, this.state.currIndices[0])}
             like2={this.state.currLikes[1].substring(0, this.state.currIndices[1])} />
           <Footer />
         </div>
+        <img id="present_down_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
       </div>
     );
   }

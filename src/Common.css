@@ -345,6 +345,7 @@ body {
 .present {
 	text-align: center;
 	height: 100%;
+	min-height: 100%;
     display: flex;
 	justify-content: center;
 	align-content: center;
@@ -352,7 +353,7 @@ body {
 }
 
 .present_wrapper {
-	min-height: 0;
+	min-height: 100%;
 }
 
 .greeting {
@@ -974,7 +975,7 @@ body {
 }
 
 .thumbnail_rollover {
-	background: black;
+	background: #FFE8DE;
     position: absolute;
     top: -50%;
     height: auto;
@@ -992,7 +993,7 @@ body {
 	line-height: 1.5em;
 	letter-spacing: .05em;
 	font-style: bold;
-	color: white;
+	color: black;
 	max-width: 450px;
 }
 
