@@ -433,22 +433,22 @@ body {
 
 .present_footer {
 	font-size: 14px;
-	line-height: 1.7em;
+	line-height: 1.9em;
 	text-transform: uppercase;
-	margin: 75px auto 50px auto;
-	letter-spacing: 1.1px;
+	margin: 75px auto 20px auto;
+	letter-spacing: 1px;
 }
 
 #present_down_arrow {
-	width: 30px;
+	width: 25px;
 	height: auto;
 	padding-bottom: 25px;
 }
 
 .contact_icons_image {
-	width: 30px;
+	width: 25px;
 	height: auto;
-	padding: 0 5px 0 5px;
+	padding: 0 8px 0 8px;
 }
 
 @media (max-height: 400px) {
