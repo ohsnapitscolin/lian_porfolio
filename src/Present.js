@@ -13,9 +13,10 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="present_footer_wrapper">
-        <p className="present_footer">
-          I want to create meaningful work that challenges conventions<br></br>by collaborating with inspired people.
+        <p className="present_footer_text">
+          I want to create meaningful work that challenges conventions by collaborating with inspired people
         </p>
+        <img id="present_footer_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
       </div>
     );
   }
@@ -96,13 +97,15 @@ export default class Present extends React.Component {
   render() {
     return (
       <div className="present">
-        <div className="present_wrapper">
-          <Greeting
-            like1={this.state.currLikes[0].substring(0, this.state.currIndices[0])}
-            like2={this.state.currLikes[1].substring(0, this.state.currIndices[1])} />
-          <Footer />
+        <div className="present_wrapper_wrapper">
+          <div className="present_wrapper">
+            <Greeting
+              like1={this.state.currLikes[0].substring(0, this.state.currIndices[0])}
+              like2={this.state.currLikes[1].substring(0, this.state.currIndices[1])} />
+          </div>
+        <div className="push" />
         </div>
-        <img id="present_down_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
+        <Footer />
       </div>
     );
   }

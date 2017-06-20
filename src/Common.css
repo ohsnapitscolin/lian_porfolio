@@ -345,15 +345,27 @@ body {
 .present {
 	text-align: center;
 	height: 100%;
+}
+
+.present_wrapper {
 	min-height: 100%;
-    display: flex;
+	max-height: 500px;
+}
+
+.present_wrapper_wrapper {
+	min-height: calc(100vh - 250px);
+	display: flex;
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
 }
 
-.present_wrapper {
-	min-height: 100%;
+.present_footer_wrapper {
+	padding: 50px 0 25px 0;
+	height: 175px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
 }
 
 .greeting {
@@ -431,18 +443,19 @@ body {
 	color: #44C0FF;
 }
 
-.present_footer {
+.present_footer_text {
 	font-size: 14px;
 	line-height: 1.9em;
 	text-transform: uppercase;
-	margin: 75px auto 20px auto;
+	margin: auto;
+	padding: 0 25px 25px 25px;
 	letter-spacing: 1px;
+	max-width: 525px;
 }
 
-#present_down_arrow {
+#present_footer_arrow {
 	width: 25px;
-	height: auto;
-	padding-bottom: 25px;
+ 	height: auto;
 }
 
 .contact_icons_image {
@@ -469,7 +482,7 @@ body {
 	#contact_icons {
 		padding-top: 10px;
 	}
-	#present_down_arrow {
+	#present_footer_arrow {
 		display: none;
 	}
 }
@@ -541,7 +554,7 @@ body {
 	#contact_icons {
 		padding-top: 25px;
 	}
-	#present_down_arrow {
+	#present_footer_arrow {
 		display: none;
 	}
 }
@@ -975,7 +988,7 @@ body {
 }
 
 .thumbnail_rollover {
-	background: #FFE8DE;
+	background: black;
     position: absolute;
     top: -50%;
     height: auto;
@@ -993,7 +1006,7 @@ body {
 	line-height: 1.5em;
 	letter-spacing: .05em;
 	font-style: bold;
-	color: black;
+	color: white;
 	max-width: 450px;
 }
 
