@@ -118,7 +118,8 @@
 			"type": "Cross-platform Service",
 			"thumbnail_src": "Seeso.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities.",
+			"in_progress": true
 		},
 		{
 			"url": "murrays_cheese",
@@ -126,7 +127,8 @@
 			"type": "Mobile Application",
 			"thumbnail_src": "Murray's.jpg",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities.",
+			"in_progress": true
 		}
 	]
 }

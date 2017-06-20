@@ -161,25 +161,45 @@ class Grid extends React.Component {
       const style = {
         width: this.work_[i].thumbnail_width
       };
-      images.push(
-        <div key={i} className="work_image_wrapper" style={style}>
-          <Link className="work_image_link" to={"/work/" + this.work_[i].url}>
+      if (!this.work_[i].in_progress) {
+        images.push(
+          <div key={i} className="work_image_wrapper" style={style}>
+            <Link className="work_image_link" to={"/work/" + this.work_[i].url}>
+              <div className="work_image_and_rollover">
+                <img
+                    className="work_image"
+                    src={require(thumbnailDirectory + this.work_[i].thumbnail_src)}
+                    alt={this.work_[i].thumbnail_src} />
+                <div className="thumbnail_rollover">
+                    <div className="thumbnail_rollover_text">
+                      {this.work_[i].hover}
+                    </div>
+                </div>
+              </div>
+              <p className="thumbnail_name">{this.work_[i].name}</p>
+              <p className="thumbnail_type">{this.work_[i].type}</p>
+            </Link>
+          </div>
+        );
+      } else {
+        images.push(
+          <div key={i} className="work_image_wrapper in_progress" style={style}>
             <div className="work_image_and_rollover">
               <img
                   className="work_image"
                   src={require(thumbnailDirectory + this.work_[i].thumbnail_src)}
                   alt={this.work_[i].thumbnail_src} />
-              <div className="thumbnail_rollover">
-                  <div className="thumbnail_rollover_text">
+              <div className="in_progress_rollover">
+                  <div className="in_progress_rollover_text">
                     {this.work_[i].hover}
                   </div>
               </div>
             </div>
             <p className="thumbnail_name">{this.work_[i].name}</p>
             <p className="thumbnail_type">{this.work_[i].type}</p>
-          </Link>
-        </div>
-      );
+          </div>
+        );
+      }
     }
   	this.stylize();
     var imagesStyle = {};
@@ -235,15 +255,22 @@ class Grid extends React.Component {
       console.log(i);
 
       var $rollover = $(obj).find('.thumbnail_rollover');
-      if (!$rollover) {
-        return;
+      if ($rollover) {
+        $(obj).hover(function() {
+          $rollover.addClass('rollover');
+        }, function() {
+          $rollover.removeClass('rollover');
+        });
       }
 
-      $(obj).hover(function() {
-        $rollover.addClass('rollover');
-      }, function() {
-        $rollover.removeClass('rollover');
-      });
+      var $in_progress = $(obj).find('.in_progress_rollover');
+      if ($in_progress) {
+        $(obj).hover(function() {
+          $in_progress.addClass('rollover');
+        }, function() {
+          $in_progress.removeClass('rollover');
+        });
+      }
     });
   }
 }

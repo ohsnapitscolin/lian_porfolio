@@ -12,16 +12,19 @@ const resources = "./resources/"
 class Footer extends React.Component {
   render() {
     return (
-      <p className="present_footer">
-        I presently work as a designer<br></br>at&nbsp;
-        <a
-          className="present_link"
-          href="http://www.studiorodrigo.com"
-          target="_blank">
-            Studio Rodgrio
-        </a>
-        &nbsp;in New York, NY.
-      </p>
+      <div className="present_footer_wrapper">
+        <p className="present_footer">
+          I presently work as a designer<br></br>at&nbsp;
+          <a
+            className="present_link"
+            href="http://www.studiorodrigo.com"
+            target="_blank">
+              Studio Rodgrio
+          </a>
+          &nbsp;in New York, NY.
+        </p>
+        <img id="present_down_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
+      </div>
     );
   }
 }
@@ -46,6 +49,18 @@ class Greeting extends React.Component {
             <div className="like_text">{this.props.like2}</div>
           </div>
         </div>
+
+          <div id="contact_icons">
+            <a className="contact_icons_link" href="https://www.linkedin.com/in/lian-fumerton-liu-9456aa67" target="_blank">
+              <img className='contact_icons_image' src={require(resources + "linkedin.png")} alt="linkedin" />
+            </a>
+            <a className="contact_icons_link" href="https://www.instagram.com/lianreay/" target="_blank">
+              <img className='contact_icons_image' src={require(resources + "instagram.png")} alt="instagram" />
+            </a>
+            <a className="contact_icons_link" href="https://uk.pinterest.com/lianreay/" target="_blank">
+              <img className='contact_icons_image' src={require(resources + "pinterest.png")} alt="pinterest" />
+            </a>
+          </div>
       </div>
     );
   }
