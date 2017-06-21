@@ -45,13 +45,16 @@ class Greeting extends React.Component {
 
           <div id="contact_icons">
             <a className="contact_icons_link" href="https://www.linkedin.com/in/lian-fumerton-liu-9456aa67" target="_blank">
-              <img className='contact_icons_image' src={require(resources + "linkedin.png")} alt="linkedin" />
+              <img className='contact_icons_image' src={require(resources + "linkedin.png")} />
+              <img className='contact_icons_image hover' src={require(resources + "linkedin_hover.png")} />
             </a>
             <a className="contact_icons_link" href="https://www.instagram.com/lianreay/" target="_blank">
-              <img className='contact_icons_image' src={require(resources + "instagram.png")} alt="instagram" />
+              <img className='contact_icons_image' src={require(resources + "instagram.png")} />
+              <img className='contact_icons_image hover' src={require(resources + "instagram_hover.png")} />
             </a>
             <a className="contact_icons_link" href="https://uk.pinterest.com/lianreay/" target="_blank">
-              <img className='contact_icons_image' src={require(resources + "pinterest.png")} alt="pinterest" />
+              <img className='contact_icons_image' src={require(resources + "pinterest.png")} />
+              <img className='contact_icons_image hover' src={require(resources + "pinterest_hover.png")} />
             </a>
           </div>
       </div>
@@ -92,6 +95,7 @@ export default class Present extends React.Component {
       setTimeout(this.typeOut.bind(this, 0, true), 1500);
       setTimeout(this.addGradient.bind(this), 5000);
     }
+    this.addHover();
   }
 
   render() {
@@ -197,5 +201,21 @@ export default class Present extends React.Component {
 
   fillLikes(iter) {
     this.currLikes_[iter] = this.likes_[iter].concat();
+  }
+
+  addHover() {
+    $('.contact_icons_link').each(function(i, obj) {
+      var $img = $(obj).find('.contact_icons_image');
+      var $img_hover = $(obj).find('.contact_icons_image.hover');
+      if ($img && $img_hover) {
+        $(obj).hover(function() {
+          $img.css({'opacity': '0'});
+          $img_hover.css({'opacity': '1'});
+        }, function() {
+          $img.css({'opacity': ''});
+          $img_hover.css({'opacity': ''});
+        });
+      }
+    });
   }
 }

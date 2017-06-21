@@ -206,6 +206,8 @@ class Grid extends React.Component {
     var gridStyle = {};
     return (
       <div className="work_grid" style={gridStyle}>
+        <img id="work_point" src={require(resources + "point.png")} />
+        <br/>
         <p className="work_header">
           Exploring how design & community converge — through visual stories, across digital screens, among printed objects, behind proactive movements.
         </p>
@@ -252,8 +254,6 @@ class Grid extends React.Component {
 
   addRollover() {
     $('.work_image_and_rollover').each(function(i, obj) {
-      console.log(i);
-
       var $rollover = $(obj).find('.thumbnail_rollover');
       if ($rollover) {
         $(obj).hover(function() {
