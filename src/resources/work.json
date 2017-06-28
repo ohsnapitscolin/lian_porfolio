@@ -14,7 +14,7 @@
 			"type": "Stickers",
 			"thumbnail_src": "NYC_Votes.png",
 			"thumbnail_width": "60%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Bold sticker design wins Runner-up in New York City’s “I Voted” sticker contest." 
 		},
 		{
 			"url": "prime_studio",
@@ -22,7 +22,7 @@
 			"type": "Website",
 			"thumbnail_src": "Prime_Studio.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Showcasing a product and brand consultancy based in NYC with a bright and modern new website."
 		},
 		{
 			"url": "give_more",
@@ -30,7 +30,7 @@
 			"type": "Logo and Branding",
 			"thumbnail_src": "Give_More.jpg",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A social media project that turns inspiration into small and maneagable actions in the aftermath of the 2016 election."
 		},
 		{
 			"url": "pinpal",
@@ -38,7 +38,7 @@
 			"type": "Enamel Pin",
 			"thumbnail_src": "Pin_Pal.jpg",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Re-imagining the international safety pin symbol."
 		},
 		{
 			"url": "yale_literary_mag",
@@ -46,7 +46,7 @@
 			"type": "Publication",
 			"thumbnail_src": "Yale_Lit_Mag.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A playful and dynamic design for the most prestigous literature magazine at Yale University."
 		},
 		{
 			"url": "algorithmic_collaborations",
@@ -54,7 +54,7 @@
 			"type": "Mixed Media Installation",
 			"thumbnail_src": "Senior_Thesis.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A multimedia installation made by an algorithm that tells me what art to create."
 		},
 		{
 			"url": "rodrigo_rec_first",
@@ -62,7 +62,7 @@
 			"name": "Rodrigo Recreation 1",
 			"type": "Poster",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Poster shenanigans for a company retreat to a letterpress shop in upstate New York."
 		},
 		{
 			"url": "hands_too_small",
@@ -70,7 +70,7 @@
 			"type": "Website",
 			"thumbnail_src": "HandsTooSmall.png",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Creating a place to find positive movements and impactful actions after the 2016 presidential election."
 		},
 		{
 			"url": "democracy_for_business",
@@ -78,7 +78,7 @@
 			"type": "Website and Branding",
 			"thumbnail_src": "Democracy_For_Business.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A clean and concise micro-site for a coalition working to rally businesses and increase voter turnout."
 		},
 		{
 			"url": "keep_up",
@@ -86,7 +86,7 @@
 			"type": "Posters",
 			"thumbnail_src": "Keep_Up.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Typographic explorations centered around the past and future of our industrial revolutions."
 		},
 		{
 			"url": "NEH_buttons",
@@ -94,7 +94,7 @@
 			"type": "Buttons",
 			"thumbnail_src": "NEH_Buttons.png",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Eye-catching buttons in support of the National Endowment of the Humanities."
 		},
 		{
 			"url": "rummage_sale",
@@ -102,7 +102,7 @@
 			"type": "Website",
 			"thumbnail_src": "Rummage_Sale.jpg",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "A web invitation-turned-interaction experience for a theoretical rummage sale."
 		},
 		{
 			"url": "vertigo",
@@ -110,7 +110,7 @@
 			"type": "Mixed Media Book",
 			"thumbnail_src": "Vertigo.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities."
+			"hover": "Transforming a film sequence into an engrossing and unique reading experience."
 		},
 		{
 			"url": "seeso",
@@ -118,7 +118,7 @@
 			"type": "Cross-platform Service",
 			"thumbnail_src": "Seeso.jpg",
 			"thumbnail_width": "63%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities.",
+			"hover": "COMING SOON — Designing the ultimate comedy streaming service for NBC’s Seeso: across web, tablet, iOS, and Android.",
 			"in_progress": true
 		},
 		{
@@ -127,7 +127,7 @@
 			"type": "Mobile Application",
 			"thumbnail_src": "Murray's.jpg",
 			"thumbnail_width": "37%",
-			"hover": "A nostalgic brand identity for Kickstarter’s biggest film festival in over 30 cities.",
+			"hover": "COMING SOON — The go-to application for cheese lovers and experts alike.",
 			"in_progress": true
 		}
 	]

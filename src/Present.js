@@ -14,7 +14,7 @@ class Footer extends React.Component {
     return (
       <div className="present_footer_wrapper">
         <p className="present_footer_text">
-          I want to create meaningful work that challenges conventions by collaborating with inspired people
+          I want to create meaningful work that challenges conventions by collaborating with inspired people.
         </p>
         <img id="present_footer_arrow" src={require(resources + "down_arrow.png")} alt="down_arrow" />
       </div>

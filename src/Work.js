@@ -177,7 +177,6 @@ class Grid extends React.Component {
                 </div>
               </div>
               <p className="thumbnail_name">{this.work_[i].name}</p>
-              <p className="thumbnail_type">{this.work_[i].type}</p>
             </Link>
           </div>
         );
@@ -196,7 +195,6 @@ class Grid extends React.Component {
               </div>
             </div>
             <p className="thumbnail_name">{this.work_[i].name}</p>
-            <p className="thumbnail_type">{this.work_[i].type}</p>
           </div>
         );
       }
