@@ -65,7 +65,6 @@ class Notables extends React.Component {
   render() {
     var notables = [];
     for (var i = 0; i < this.props.notables.length; i++) {
-      console.log(this.props.notables[i]);
       notables.push(
         <li className="notables_element"
             dangerouslySetInnerHTML={{__html: this.props.notables[i].text}} />
