@@ -93,7 +93,9 @@ export default class Nativigation extends React.Component {
   			<ShowButton onClick={this.showMobileNav.bind(this)}/>
   			<HideButton onClick={this.hideMobileNav.bind(this)} />
         <Link to="/present" onClick={this.hideMobileNav.bind(this)}>
-  		    <div className="overlay"/>
+  		    <div className="overlay">
+            <img className="home_icon" src={require(resources + "home.png")} alt="home" />
+          </div>
         </Link>
         <div className="gradient1"/>
         <div className="gradient2"/>
@@ -165,7 +167,7 @@ export default class Nativigation extends React.Component {
       $('.show_border_button').addClass('hidden');
       $('.hide_border_button').addClass('active');
       $('.home_left').addClass('active');
-      $('.overlay').show();
+      $('.overlay').addClass('active');
   }
 
   hideMobileNav() {
@@ -174,7 +176,7 @@ export default class Nativigation extends React.Component {
     $('.show_border_button').removeClass('hidden');
     $('.hide_border_button').removeClass('active');
     $('.home_left').removeClass('active');
-  	$('.overlay').hide();
+  	$('.overlay').removeClass('active');
   }
 
   getPath(pathname) {
