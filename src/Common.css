@@ -905,7 +905,7 @@ body {
 }
 
 #work_point {
-	width: 30px;
+	width: 40px;
 	display: inline-block;
 }
 
@@ -922,8 +922,8 @@ body {
 }
 
 #work_description {
-	font-size: 14px;
-	letter-spacing: 1px;
+	font-size: 15px;
+	letter-spacing: .5px;
 	line-height: 1.5em;
 	text-transform: uppercase;
 	margin: auto;
@@ -965,8 +965,8 @@ body {
 }
 
 .work_header {
-	font-size: 14px;
-	max-width: 525px;
+	font-size: 15px;
+	max-width: 540px;
 	display: inline-block;
 	line-height: 1.7em;
 	letter-spacing: .05em;
@@ -982,7 +982,7 @@ body {
 
 .thumbnail_name {
 	color: black;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: bold;
 	letter-spacing: .5px;
 	line-height: 1.5em;
@@ -1043,14 +1043,17 @@ body {
 	align-content: center;
 	flex-direction: column;
 	text-align: center;
+    align-items: center;
 }
 
 .in_progress_rollover_text {
-	font-size: 14px;
+	font-size: 14 px;
 	line-height: 1.5em;
 	letter-spacing: .05em;
 	font-style: bold;
 	color: white;
+	max-width: 450px;
+	display: inline-block;
 }
 
 .in_progress_rollover.rollover {
@@ -1184,7 +1187,7 @@ body {
 }
 
 .project_name {
-	font-size: 24px;
+	font-size: 28px;
 	letter-spacing: .5px;
 	line-height: 1.4em;
 	margin-top: -4px;
@@ -1193,6 +1196,7 @@ body {
 
 .project_type {
 	color: #999999;
+	font-size: 18px;
 	letter-spacing: .5px;
 }
 
@@ -1228,8 +1232,8 @@ body {
 }
 
 .project_header_content {
-	font-size: 13px;
-	letter-spacing: .8px;
+	font-size: 15px;
+	letter-spacing: .5px;
 	line-height: 1.7em;
 }
 
@@ -1281,8 +1285,8 @@ body {
 
 .project_image_text {
 	max-width: 700px;
-	font-size: 13px;
-	letter-spacing: .8px;
+	font-size: 15px;
+	letter-spacing: .5px;
 	line-height: 1.7em;
 }
 
